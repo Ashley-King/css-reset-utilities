@@ -154,28 +154,36 @@ li{
   font-size: var(--fs-32);
 }
 .fs-48{
-  font-size: var(--fs-48);
+  font-size: $fs-48;
+  line-height: 1.1;
 }
 .fs-56{
-  font-size: var(--fs-56);
+  font-size: $fs-56;
+  line-height: 1.1;
 }
 .fs-64{
-  font-size: var(--fs-64);
+  font-size: $fs-64;
+  line-height: 1.1;
 }
 .fs-72{
-  font-size: var(--fs-72);
+  font-size: $fs-72;
+  line-height: 1.1;
 }
 .fs-80{
-  font-size: var(--fs-80);
+  font-size: $fs-80;
+  line-height: 1.1;
 }
 .fs-96{
-  font-size: var(--fs-96);
+  font-size: $fs-96;
+  line-height: 1.1;
 }
 .fs-100{
-  font-size: var(--fs-100);
+  font-size: $fs-100;
+  line-height: 1.1;
 }
 .fs-150{
-  font-size: var(--fs-150);
+  font-size: $fs-150;
+  line-height: 1.1;
 }
 /* font weights */
 .fw-100{
