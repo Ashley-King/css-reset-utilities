@@ -8,21 +8,30 @@
   $clr-white: 0 0% 100%; 
 
   /* font sizes */
-  $fs-14: 0.875rem;
-  $fs-16: 1rem;
-  $fs-18: 1.125rem;
-  $fs-20: 1.25rem;
-  $fs-24: 1.5rem;
-  $fs-28: 1.75rem;
-  $fs-32: 2rem;
-  $fs-48: 3rem;
-  $fs-56: 3.5rem;
-  $fs-64: 4rem;
-  $fs-72: 4.5rem;
-  $fs-80: 5rem;
-  $fs-96: 6rem;
-  $fs-100: 6.25rem;
-  $fs-150: 9.375rem;
+  $fs-14: 1.4rem;
+  $fs-16: 1.6rem;
+  $fs-18: 1.8rem;
+  $fs-20: 2rem;
+  $fs-22: 2.3rem;
+  $fs-24: 2.4rem;
+  $fs-28: 2.8rem;
+  $fs-32: 3.2rem;
+  $fs-34: 3.4rem;
+  $fs-36: 3.6rem;
+  $fs-38: 3.8rem;
+  $fs-40: 4rem;
+  $fs-42: 4.2rem;
+  $fs-44: 4.4rem;
+  $fs-46: 4.6rem;
+  $fs-48: 4.8rem;
+  $fs-50: 5rem;
+  $fs-56: 5.6rem;
+  $fs-64: 6.4rem;
+  $fs-72: 7.2rem;
+  $fs-80: 8.0rem;
+  $fs-96: 9.6rem;
+  $fs-100: 10rem;
+  $fs-150: 15rem;
 
   /* Font Families */
   $ff-barlow: 'Barlow', sans-serif;
@@ -65,6 +74,11 @@ picture{
   display: block;
 }
 
+html{
+  // revert base font to 10px
+  font-size: 62.5%;
+}
+
 html,
 body{
   padding: 0;
@@ -77,7 +91,6 @@ body{
   text-rendering: optimizeSpeed;
   font-family: $ff-barlow;
   font-size: $fs-18;
-  background-color: hsl($clr-dark);
 }
 
 input,
@@ -141,6 +154,9 @@ li{
 .fs-20{
   font-size: $fs-20;
 }
+.fs-22{
+  font-size: $fs-22;
+}
 .fs-24{
   font-size: $fs-24;
 }
@@ -150,10 +166,34 @@ li{
 .fs-32{
   font-size: $fs-32;
 }
+.fs-34{
+  font-size: $fs-34;
+}
+.fs-36{
+  font-size: $fs-36;
+}
+.fs-38{
+  font-size: $fs-38;
+}
+.fs-40{
+  font-size: $fs-40;
+}
+.fs-42{
+  font-size: $fs-42;
+}
+.fs-44{
+  font-size: $fs-44;
+}
+.fs-46{
+  font-size: $fs-46;
+}
 .fs-48{
   font-size: $fs-48;
-  line-height: 1.1;
 }
+.fs-50{
+  font-size: $fs-50;
+}
+
 .fs-56{
   font-size: $fs-56;
   line-height: 1.1;
