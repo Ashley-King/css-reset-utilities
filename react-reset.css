@@ -11,7 +11,7 @@
   --layout
   --MISC UTILITIES
     --screen reader
-    --no-wrap
+    --no-wrap/
     --no-scrolling
 /* -------------------- */
 
@@ -347,7 +347,7 @@ button::-moz-focus-inner,
   text-transform: capitalize;
 }
 
-* DISPLAY & POSITION */
+/* DISPLAY & POSITION */
 
 .dBlock {
   display: block;
