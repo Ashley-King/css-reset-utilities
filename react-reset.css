@@ -1,3 +1,20 @@
+/* TABLE OF CONTENTS
+--VARIABLES
+--RESET
+--UTILITIES
+  --background colors
+  --font sizes
+  --font weights
+  --font families
+  --text styles
+  --display & position
+  --layout
+  --MISC UTILITIES
+    --screen reader
+    --no-wrap
+    --no-scrolling
+/* -------------------- */
+
 /* -------------------- */
 /* GOOGLE FONTS          */
 /* -------------------- */
@@ -446,6 +463,8 @@ button::-moz-focus-inner,
 }
 
 /* MISC UTILITIES */
+
+/* screen reader */
 
 .srOnly{
   position: absolute;
