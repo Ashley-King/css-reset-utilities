@@ -72,6 +72,113 @@
   
 /* -------------------- */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+html{
+  /* revert base font to 10px */
+  font-size: 62.5%;
+}
+
+html,
+body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-open);
+  font-size: var(--fs-18);
+  color: hsl(var(--clr-text));
+}
+
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+img, 
+picture, 
+video, 
+canvas, 
+svg{
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li{
+  font-weight: var(--fw-400);
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 ,
+a{
+  overflow-wrap: break-word;
+}
+
+@media(prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
 
 
 /* -------------------- */
