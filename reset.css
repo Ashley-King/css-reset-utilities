@@ -63,7 +63,14 @@
 }
 
 /* -------------------- */
-/* RESET                */
+/* RESET - taken from:
+   
+  https://www.joshwcomeau.com/css/custom-css-reset/
+  
+  https://piccalil.li/blog/a-modern-css-reset/
+
+  https://necolas.github.io/normalize.css/
+  
 /* -------------------- */
 
 *,
@@ -72,29 +79,14 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-picture,
-figure,
-img,
-p,
-ul,
-ol,
-li {
+*{
   margin: 0;
   padding: 0;
 }
 
-img,
-picture{
-  max-width: 100%;
-  display: block;
-  height: auto;
-}
+
+
+
 
 html{
   /* revert base font to 10px */
@@ -105,14 +97,17 @@ html,
 body{
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 body{
-  line-height: 1.7;
+  line-height: 1.5;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font-family: var(--ff-barlow);
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-open);
   font-size: var(--fs-18);
+  color: hsl(var(--clr-text));
 }
 
 input,
@@ -120,6 +115,15 @@ button,
 textarea,
 select{
   font: inherit;
+}
+
+img, 
+picture, 
+video, 
+canvas, 
+svg{
+  max-width: 100%;
+  display: block;
 }
 
 h1,
@@ -133,6 +137,17 @@ li{
   font-weight: var(--fw-400);
 }
 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 ,
+a{
+  overflow-wrap: break-word;
+}
+
 @media(prefers-reduced-motion: reduce){
   *,
   *::before,
@@ -144,23 +159,9 @@ li{
   }
 }
 
-/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+#root, #__next {
+  isolation: isolate;
 }
-
-sub {
-  bottom: -.25em;
-}
-
-sup {
-  top: -.5em;
-}
-
 
 /** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
 button,
@@ -178,8 +179,6 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
-
 
 
 
