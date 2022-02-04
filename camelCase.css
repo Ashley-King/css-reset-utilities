@@ -24,10 +24,9 @@
 /* VARIABLES           */
 /* -------------------- */
 :root{
-  /* colors - hsl values */
-  --clr-dark: 230 35% 7%;
-  --clr-accent: 231, 77%, 90%;
-  --clr-white: 0 0% 100%; 
+  /* colors  */
+  --clr-dark: #000;
+  --clr-white: #fff; 
 
   /* font sizes */
   --fs-14: 1.4rem;
@@ -106,7 +105,7 @@ body{
   -webkit-font-smoothing: antialiased;
   font-family: var(--ff-open);
   font-size: var(--fs-18);
-  color: hsl(var(--clr-text));
+  color: var(--clr-dark);
 }
 
 input,
@@ -133,7 +132,7 @@ h5,
 h6,
 p,
 li{
-  font-weight: var(--fw-400);
+  font-weight: -400;
 }
 
 p, 
@@ -187,15 +186,13 @@ button::-moz-focus-inner,
 
 /* background colors */
 .bgDark{
-  background-color: hsl(var(--clr-dark));
+  background-color: var(--clr-dark);
 }
 
-.bgAccent{
-  background-color: hsl(var(--clr-accent));
-}
+
 
 .bgWhite{
-  background-color: hsl(var(--clr-white));
+  background-color: var(--clr-white);
 }
 /* font sizes */
 .fs14{

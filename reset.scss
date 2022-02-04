@@ -22,10 +22,9 @@
 /* VARIABLES           */
 /* -------------------- */
 
-  /* colors - hsl values */
-  $clr-dark: 230 35% 7%;
-  $clr-accent: 231, 77%, 90%;
-  $clr-white: 0 0% 100%; 
+  /* colors */
+  $clr-dark: #000;
+  $clr-white: #fff; 
 
   /* font sizes */
   $fs-14: 1.4rem;
@@ -104,9 +103,9 @@ body{
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
-  font-family: var(--ff-open);
-  font-size: var(--fs-18);
-  color: hsl(var(--clr-text));
+  font-family: $ff-open;
+  font-size: $fs-18;
+  color: $clr-dark;
 }
 
 input,
@@ -133,7 +132,7 @@ h5,
 h6,
 p,
 li{
-  font-weight: var(--fw-400);
+  font-weight: 400;
 }
 
 p, 
@@ -188,15 +187,11 @@ button::-moz-focus-inner,
 /* BACKGROUND COLORS */
 
 .bg-dark{
-  background-color: hsl($clr-dark);
-}
-
-.bg-accent{
-  background-color: hsl($clr-accent);
+  background-color:$clr-dark;
 }
 
 .bg-white{
-  background-color: hsl($clr-white);
+  background-color:$clr-white;
 }
 
 /* FONT SIZES */
